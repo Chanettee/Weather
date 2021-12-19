@@ -101,7 +101,7 @@ function Climate(value) {
     function LoadForcast() {
         var x = $("#Latitude").val();
         var y = $("#Longitude").val();
-        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + x + "&lon=" + y + "&appid=585ebd9c6b56cac04e88cb2269a1cc6f"
+        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + x + "&lon=" + y + "&appid=d1eed91d1cc9541e07aefcbd356f8112"
         $.getJSON(url)
             .done((data) => {
                 var datetime = Climate(data.dt);
